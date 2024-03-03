@@ -113,14 +113,12 @@
 </script>
 
 <style>
-  /* Add some styles for the timer */
   .timer {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 3rem;
 	text-align: center;
   }
 
-  /* Add some styles for the buttons */
   .buttons {
 	display: flex;
 	justify-content: center;
@@ -154,11 +152,11 @@
   }
 
   .active {
-	color: #0f0;
+	color: #6a6;
   }
 
   .break {
-	color: #f00;
+	color: #b55;
   }
 </style>
 
