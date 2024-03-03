@@ -113,8 +113,19 @@
 </script>
 
 <style>
+
+	
+	.inter-modoro {
+	  font-family: "Inter", sans-serif;
+	  font-optical-sizing: auto;
+	  font-weight: 800;
+	  font-style: normal;
+	  font-variation-settings:
+		"slnt" 0;
+	}
+	
   .timer {
-	font-family: 'Courier New', Courier, monospace;
+	
 	font-size: 3rem;
 	text-align: center;
   }
@@ -146,9 +157,12 @@
 	box-shadow: 0 0 0 2px #00f;
   }
 
-  /* Add some styles for the timer state */
   .idle {
-	color: #000;
+	color: #fff;
+  }
+  
+  .count{
+	color: #fff;
   }
 
   .active {
@@ -160,7 +174,7 @@
   }
 </style>
 
-<div class="timer">
+<div class="timer inter-modoro">
   <!-- Show the pomodoro time or the break time depending on the timer state -->
   {#if $timerState === 'active'}
 	<p class="active">{formatTime($pomodoroTime)}</p>
@@ -171,7 +185,7 @@
   {/if}
 
   <!-- Show the pomodoro count -->
-  <p>Pomodoros: {$pomodoroCount}</p>
+  <p class="count">Pomodoros: {$pomodoroCount}</p>
 </div>
 
 <div class="buttons">

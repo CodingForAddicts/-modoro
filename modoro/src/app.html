@@ -1,12 +1,54 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<style class="video-HTML-Embed">
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+		</style>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
+	<div class="video-background">
+	  <!-- Create an iframe element to embed the YouTube video -->
+	  <!-- Replace the video ID with the one you want to use -->
+	  <iframe
+		src="https://www.youtube.com/embed/YOJsKatW-Ts?&autoplay=1&mute=1&playsinline=1&controls=0"
+	  ></iframe>
+	</div>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
+
+<!-- Add some CSS code to style the video background and the content -->
+<style>
+  /* Make the video background cover the whole screen */
+  .video-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+  }
+
+  /* Make the iframe fill the video background container */
+  .video-background iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+  }
+
+  /* Add some padding and margin to the content */
+  .content {
+	padding: 2rem;
+	margin: 2rem;
+	background-color: rgba(255, 255, 255, 0.8);
+	
+	/* disable youtube controls*/
+	.video-HTML-Embed {
+	 pointer-events: none;
+	}
+  }
+</style>
