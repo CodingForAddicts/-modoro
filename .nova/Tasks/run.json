@@ -1,0 +1,8 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "cd \/Users\/antoine\/Documents\/-modoro\/modoro\nnpm run dev"
+    }
+  }
+}

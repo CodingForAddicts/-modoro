@@ -139,22 +139,26 @@
   button {
 	padding: 0.5rem 1rem;
 	border: none;
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
 	background-color: #f0f0f0;
 	cursor: pointer;
+	font-family: "Inter", sans-serif;
+	transition: transform .2s
   }
 
   button:hover {
 	background-color: #e0e0e0;
+	transform: scale(1.2)
   }
 
   button:active {
 	background-color: #d0d0d0;
+	transform: scale(1.1)
   }
 
   button:focus {
 	outline: none;
-	box-shadow: 0 0 0 2px #00f;
+	box-shadow: 0 0 0 2px #280;
   }
 
   .idle {

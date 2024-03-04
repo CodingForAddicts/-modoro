@@ -16,21 +16,35 @@
 		src="https://www.youtube.com/embed/YOJsKatW-Ts?&autoplay=1&mute=1&playsinline=1&controls=0"
 	  ></iframe>
 	</div>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover" class="vertical-center " >
+		<div style="display: contents" >%sveltekit.body%</div>
 	</body>
 </html>
 
 <!-- Add some CSS code to style the video background and the content -->
 <style>
+	html, body {margin: 0; height: 100%; overflow: hidden}
+	* {
+		margin: 0;
+	}
+	.vertical-center {
+	  display: flex;
+	  flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		gap: 50px;
+	}
   /* Make the video background cover the whole screen */
   .video-background {
+	  object-fit: cover;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+	
   }
 
   /* Make the iframe fill the video background container */
@@ -38,6 +52,7 @@
 	width: 100%;
 	height: 100%;
 	border: none;
+	object-fit: cover;
   }
 
   /* Add some padding and margin to the content */
