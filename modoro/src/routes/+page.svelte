@@ -6,7 +6,7 @@
   const pomodoroTime = writable(25 * 60);
 
   // Create a store to hold the break time in seconds
-  const breakTime = writable(5 * 60);
+  const breakTime = writable(5 * 60); 
 
   // Create a store to hold the number of completed pomodoros
   const pomodoroCount = writable(0);
