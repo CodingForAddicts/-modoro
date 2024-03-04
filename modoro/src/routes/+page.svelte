@@ -118,7 +118,7 @@
 	.inter-modoro {
 	  font-family: "Inter", sans-serif;
 	  font-optical-sizing: auto;
-	  font-weight: 800;
+	  font-weight: 800; 
 	  font-style: normal;
 	  font-variation-settings:
 		"slnt" 0;
